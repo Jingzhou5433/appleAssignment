@@ -1,0 +1,144 @@
+:root{
+    --background-color: rgb(0,0,0);
+    --tag-blue:#3498db;
+    --tag-red: #FC427B;
+    --tag-orange: #e67e22;
+    --tag-purple: #8e44ad;
+    --tag-green: #2ecc71;
+    --tag-grey: #43576b;
+    --container-bg: rgb(223, 223, 223);
+    --subRow-color:#979797;
+    --row-height: 50px;
+}
+
+*{
+    color: white;
+    font-family: 'myriad', sans-serif;
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: 'myriad';
+    src: url('../myriad_sv/NewFolder/Myriad\ Pro\ Light.otf');
+}
+i{
+    font-size: 25px;
+}
+
+i:hover{
+    cursor: pointer;
+    transform: rotate(1);
+}
+
+body{
+    background: var(--container-bg);
+    height: 100vh;
+    margin: 0;
+    font-size: 18pt;
+}
+
+.header{
+    height: var(--row-height);
+    background: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 13.5px;
+}
+
+.hamburger{
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    padding: 0 13.5px;
+}
+
+ul #head-info{
+    margin-left: 8px;
+}
+
+ul .set{
+    display: flex;
+}
+
+.set li:first-child{
+    margin-right: 16px;
+}
+
+.collapse {
+    display:block;
+    max-width: 0;
+    overflow: hidden;
+    height: 100vh;
+    transition: max-width 0.2s ease-out;
+    background: var(--background-color);   
+}
+
+.collapse i{
+    font-size: 12px;
+}
+
+
+
+.collapse #col-tal{
+    background: var(--tag-blue);
+}
+.collapse #col-conn{
+    background: var(--tag-red);
+}
+.collapse #col-intel{
+    background: var(--tag-orange);
+}
+.collapse #col-work{
+    background: var(--tag-purple);
+}
+.collapse #col-insi{
+    background: var(--tag-green);
+}
+.collapse #col-johhny{
+    background: var(--tag-grey);
+}
+
+.collapse .row{
+    height: 50px;
+    background: var(--background-color);
+    border-bottom:1px solid var(--tag-grey) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 44px;
+    padding-right: 26px;
+    margin-left: 6px;
+}
+
+
+.collapse i{
+    font-size: 12px;
+    transition: transform 0.5s;
+}
+
+.coll-content{
+    margin-left: 50px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+
+.sub-row{
+    height: 40px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.sub-row span{
+    color: var(--subRow-color);
+    font-size: 16px;
+}
+
