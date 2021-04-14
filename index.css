@@ -19,7 +19,7 @@
 
 @font-face {
     font-family: 'myriad';
-    src: url('../myriad_sv/NewFolder/Myriad\ Pro\ Light.otf');
+    src: url('./myriad_sv/NewFolder/Myriad\ Pro\ Light.otf');
 }
 i{
     font-size: 25px;
